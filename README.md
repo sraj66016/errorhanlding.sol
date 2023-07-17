@@ -13,7 +13,7 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract solidityErrorHandling {
+contract ErrorHandlingexample {
     function checkValue(uint _value) public  returns (string memory) {
         require(_value > 0, "Value must be greater than zero");
 
@@ -25,7 +25,7 @@ contract solidityErrorHandling {
         }
     }
 
-    function sendmessagevalue(address payable _recipient) public payable {
+    function sendether(address payable _recipient) public payable {
         require(msg.value > 0, "Sent value must be greater than zero");
 
         if (msg.value >= 1 ether) {
